@@ -38,6 +38,7 @@ Oh! yeah, I got it! Thanks！
 
 ![image](testpass.png)
 
+### set ups:
 #### The file & directory structure needed
 ![image](files.png)
 #### The contents of each file before fixing the bug
@@ -45,10 +46,17 @@ Oh! yeah, I got it! Thanks！
 ![image](code.png)
 ![image](test.shbefore.png)
 #### The full command line (or lines) you ran to trigger the bug
-`bash test.sh`
+For both bugs, I ask student to use `bash test.sh` to ran to trigger the bug.
 
 #### A description of what to edit to fix the bug
 - It might works different on different computer system. If you using Window system, Please try to make all the `:` to be `;`. For examples, `.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` should be `.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar` in Windows system.
 - In your code, you only swich the last elements to the front but did not swich the back elements to the front, so the last half of the array will stay the same, which cause errors. In the test error message, you can see that in the position 1, expect value is 3, but the actual is 2, which means that the second value did not change at all and you need to fix it.
 
 ## Part 2 – Reflection
+The most useful things is I know that we can create a .sh file and use bash to ran mutiple command at the same time. And we can use .sh file to write if statement and for loop using specific format. I think it is really useful and I never learn it before. 
+
+Also I learn jdb, one of the hardesst thing I learn in cse 15l and I still have a hard time to use it. But it is really useful to find the infinity loops. when there is a lot of loops and function, it is hard to find the one that is infinity loop, But jdb could find it easily just set up different break points. 
+
+The tool I like the most is vim. It can change the file directly without find and open it on tap. It is really helpful when we cannot find or access the file directly but remotely. 
+
+In labs, I recieve a lot of help from tutors and classmates which really help me to understand the concepts and the method that we learn in class and also might apply to the skill demo. Thanks everyone!!
