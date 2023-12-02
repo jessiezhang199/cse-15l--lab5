@@ -38,7 +38,17 @@ Oh! yeah, I got it! Thanks！
 
 ![image](testpass.png)
 
+#### The file & directory structure needed
+![image](files.png)
+#### The contents of each file before fixing the bug
+![image](wrongcode.png)
+![image](code.png)
+![image](test.shbefore.png)
+#### The full command line (or lines) you ran to trigger the bug
+`bash test.sh`
 
-
+#### A description of what to edit to fix the bug
+- It might works different on different computer system. If you using Window system, Please try to make all the `:` to be `;`. For examples, `.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` should be `.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar` in Windows system.
+- In your code, you only swich the last elements to the front but did not swich the back elements to the front, so the last half of the array will stay the same, which cause errors. In the test error message, you can see that in the position 1, expect value is 3, but the actual is 2, which means that the second value did not change at all and you need to fix it.
 
 ## Part 2 – Reflection
